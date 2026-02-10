@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #eee;
+            line-height: 1.6;
+
+            background:
+                radial-gradient(circle at 20% 30%, rgba(255, 120, 40, 0.35), transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(180, 70, 20, 0.35), transparent 45%),
+                radial-gradient(circle at 50% 50%, rgba(120, 40, 10, 0.25), transparent 50%),
+                linear-gradient(180deg, #000 0%, #120600 100%);
+        }
+
+        header {
+            width: 100%;
+            height: 80px;
+            background-color: #000;
+            color: white;
+            padding: 20px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .nav-link {
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #ff8c42;
+        }
+
+        /* Hero Section */
+        #hero {
+            min-height: 600px;
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        .hero-heading {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: auto;
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        /* Photo Frame */
+        .photo-frame {
+            width: 280px;
+            height: 360px;
+            margin: 60px auto 0;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #000;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            border: 2px solid rgba(255, 140, 66, 0.4);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* YouTube Channel Sections */
+        .channel-section {
+            padding: 100px 10%;
+            text-align: center;
+            position: relative;
+        }
+
+        .channel-background {
+            width: 100%;
+            max-width: 1000px;
+            height: 260px;
+            margin: 0 auto 40px;
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 2px dashed rgba(255, 140, 66, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 18px;
+        }
+
+        .channel-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .channel-description {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            color: #ccc;
+        }
+
+        .channel-link {
+            display: inline-block;
+            padding: 12px 28px;
+            font-size: 16px;
+            color: #000;
+            background-color: #ff8c42;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .channel-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 140, 66, 0.4);
+        }
+
+        footer {
+            margin-top: 80px;
+            padding: 20px;
+            text-align: center;
+            color: #aaa;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Me</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+		<a href="mymovie.html" class="nav-link">My Movie</a>
+        <a href="contact.html" class="nav-link">Contact Me</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="hero">
+    <h1 class="hero-heading">Welcome to My Film Portfolio!</h1>
+
+    <div class="hero-content">
+        <p>Welcome to my digital haven where I share my journey in filmmaking. As a passionate high school student with a keen eye for detail and a love for storytelling, I have embarked on an exciting path to hone my skills in cinematography, editing, and production.</p>
+
+        <p>Through hands-on experience, workshops, and collaboration, I’ve learned how to turn ideas into cinematic moments. My goal is to create visually striking films that tell meaningful stories and leave an impact.</p>
+    </div>
+
+    <div class="photo-frame">
+        <img src="images/notme.jpg" alt="Photo of Me">
+    </div>
+</section>
+
+<!-- YouTube Channel: TonsOfRivers Comedy -->
+<section class="channel-section" id="tons-of-rivers">
+    <div class="channel-background">
+        <img src="images/tonsbanner.jpg" alt="TonsOfRiversBanner">
+    </div>
+
+    <h2 class="channel-title">TonsOfRivers Comedy</h2>
+
+    <p class="channel-description">
+        A comedy-focused YouTube channel featuring sketches, bits, and absurd humor. This space highlights my work in comedic writing, performance, and editing.
+    </p>
+
+    <a href="https://www.youtube.com/@tonsofrivers" target="_blank" rel="noopener noreferrer" class="channel-link">Visit Channel</a>
+
+</section>
+
+<!-- YouTube Channel: The Brocoder -->
+<section class="channel-section" id="the-brocoder">
+    <div class="channel-background">
+        <img src="images/brobanner.jpg" alt="BroCoderBanner">
+    </div>
+
+    <h2 class="channel-title">The Brocoder</h2>
+
+    <p class="channel-description">
+        A programming and tech channel where I break down coding concepts, projects, and developer humor in an accessible and entertaining way.
+    </p>
+
+    <a href="https://www.youtube.com/@brocodergaming" target="_blank" rel="noopener noreferrer" class="channel-link">Visit Channel</a>
+</section>
+
+<footer>
+    <p>&copy; 2026 Film Student Portfolio</p>
+</footer>
+
+</body>
+</html>
